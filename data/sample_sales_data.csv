@@ -1,0 +1,11 @@
+Date,Order_ID,Customer_ID,Customer_Segment,Product,Category,Region,Sales_Rep,Units_Sold,Unit_Price,Revenue,Cost,Profit,Payment_Method
+2025-01-02,ORD-1001,CUST-201,Consumer,Laptop Pro,Electronics,West,Alex Johnson,2,1200,2400,1800,600,Credit Card
+2025-01-03,ORD-1002,CUST-305,Corporate,Office Chair,Furniture,East,Sarah Lee,5,150,750,500,250,ACH
+2025-01-05,ORD-1003,CUST-112,Consumer,Wireless Mouse,Accessories,South,Michael Chen,10,25,250,120,130,Debit Card
+2025-01-07,ORD-1004,CUST-450,Small Business,Standing Desk,Furniture,Midwest,Emily Davis,1,650,650,420,230,Credit Card
+2025-01-10,ORD-1005,CUST-233,Consumer,Smartphone X,Electronics,West,Alex Johnson,3,900,2700,2100,600,Credit Card
+2025-01-12,ORD-1006,CUST-389,Corporate,Noise Cancelling Headphones,Accessories,East,Sarah Lee,4,280,1120,700,420,Wire Transfer
+2025-01-14,ORD-1007,CUST-178,Small Business,Printer Plus,Electronics,South,Michael Chen,2,450,900,640,260,Debit Card
+2025-01-16,ORD-1008,CUST-512,Consumer,Monitor 27",Electronics,Midwest,Emily Davis,3,320,960,690,270,Credit Card
+2025-01-18,ORD-1009,CUST-264,Corporate,Conference Table,Furniture,West,Alex Johnson,1,1800,1800,1400,400,ACH
+2025-01-20,ORD-1010,CUST-301,Consumer,Keyboard Mechanical,Accessories,East,Sarah Lee,6,110,660,360,300,Credit Card
