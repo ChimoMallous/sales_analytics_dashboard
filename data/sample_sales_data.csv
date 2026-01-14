@@ -9,3 +9,33 @@ Date,Order_ID,Customer_ID,Customer_Segment,Product,Category,Region,Sales_Rep,Uni
 2025-01-16,ORD-1008,CUST-512,Consumer,Monitor 27",Electronics,Midwest,Emily Davis,3,320,960,690,270,Credit Card
 2025-01-18,ORD-1009,CUST-264,Corporate,Conference Table,Furniture,West,Alex Johnson,1,1800,1800,1400,400,ACH
 2025-01-20,ORD-1010,CUST-301,Consumer,Keyboard Mechanical,Accessories,East,Sarah Lee,6,110,660,360,300,Credit Card
+2025-02-02,ORD-1011,CUST-221,Consumer,Laptop Air,Electronics,South,Michael Chen,1,950,950,700,250,Debit Card
+2025-02-05,ORD-1012,CUST-334,Small Business,Desk Lamp,Accessories,Midwest,Emily Davis,8,45,360,200,160,Credit Card
+2025-02-08,ORD-1013,CUST-412,Corporate,Ergonomic Chair,Furniture,West,Alex Johnson,2,350,700,500,200,Wire Transfer
+2025-02-11,ORD-1014,CUST-127,Consumer,Tablet Z,Electronics,East,Sarah Lee,5,600,3000,2200,800,Credit Card
+2025-02-14,ORD-1015,CUST-290,Small Business,Printer Ink,Accessories,South,Michael Chen,12,30,360,180,180,Debit Card
+2025-02-17,ORD-1016,CUST-503,Corporate,Projector X,Electronics,Midwest,Emily Davis,1,1200,1200,900,300,ACH
+2025-03-01,ORD-1017,CUST-214,Consumer,Smartwatch S,Electronics,West,Alex Johnson,4,350,1400,1000,400,Credit Card
+2025-03-04,ORD-1018,CUST-378,Small Business,Office Desk,Furniture,East,Sarah Lee,2,600,1200,800,400,Wire Transfer
+2025-03-07,ORD-1019,CUST-119,Consumer,Wireless Keyboard,Accessories,South,Michael Chen,7,80,560,350,210,Debit Card
+2025-03-10,ORD-1020,CUST-490,Corporate,Conference Phone,Electronics,Midwest,Emily Davis,1,500,500,350,150,ACH
+2025-03-13,ORD-1021,CUST-232,Consumer,Headphones Lite,Accessories,West,Alex Johnson,3,120,360,200,160,Credit Card
+2025-03-16,ORD-1022,CUST-367,Small Business,Bookshelf,Furniture,East,Sarah Lee,1,200,200,120,80,Debit Card
+2025-03-19,ORD-1023,CUST-444,Corporate,Laptop Pro,Electronics,South,Michael Chen,2,1200,2400,1800,600,Wire Transfer
+2025-04-01,ORD-1024,CUST-278,Consumer,Tablet Mini,Electronics,Midwest,Emily Davis,3,450,1350,1000,350,Credit Card
+2025-04-04,ORD-1025,CUST-315,Small Business,Ergonomic Chair,Furniture,West,Alex Johnson,2,350,700,500,200,ACH
+2025-04-07,ORD-1026,CUST-198,Consumer,Wireless Mouse,Accessories,East,Sarah Lee,5,25,125,60,65,Debit Card
+2025-04-10,ORD-1027,CUST-501,Corporate,Projector Mini,Electronics,South,Michael Chen,1,800,800,600,200,Wire Transfer
+2025-04-13,ORD-1028,CUST-237,Consumer,Smartphone X,Electronics,Midwest,Emily Davis,2,900,1800,1400,400,Credit Card
+2025-04-16,ORD-1029,CUST-412,Small Business,Printer Plus,Electronics,West,Alex Johnson,1,450,450,320,130,Debit Card
+2025-05-01,ORD-1030,CUST-329,Consumer,Monitor 24",Electronics,East,Sarah Lee,2,280,560,400,160,Credit Card
+2025-05-04,ORD-1031,CUST-117,Corporate,Office Chair,Furniture,South,Michael Chen,3,150,450,300,150,Wire Transfer
+2025-05-07,ORD-1032,CUST-500,Small Business,Desk Lamp,Accessories,Midwest,Emily Davis,6,45,270,150,120,Debit Card
+2025-05-10,ORD-1033,CUST-276,Consumer,Keyboard Mechanical,Accessories,West,Alex Johnson,4,110,440,240,200,Credit Card
+2025-05-13,ORD-1034,CUST-399,Corporate,Laptop Air,Electronics,East,Sarah Lee,2,950,1900,1400,500,ACH
+2025-05-16,ORD-1035,CUST-222,Small Business,Standing Desk,Furniture,South,Michael Chen,1,650,650,420,230,Debit Card
+2025-05-19,ORD-1036,CUST-455,Consumer,Smartwatch S,Electronics,Midwest,Emily Davis,3,350,1050,750,300,Credit Card
+2025-06-01,ORD-1037,CUST-338,Corporate,Conference Table,Furniture,West,Alex Johnson,1,1800,1800,1400,400,Wire Transfer
+2025-06-04,ORD-1038,CUST-276,Consumer,Headphones Lite,Accessories,East,Sarah Lee,5,120,600,350,250,Debit Card
+2025-06-07,ORD-1039,CUST-503,Small Business,Bookshelf,Furniture,South,Michael Chen,2,200,400,240,160,Credit Card
+2025-06-10,ORD-1040,CUST-212,Consumer,Tablet Z,Electronics,Midwest,Emily Davis,3,600,1800,1300,500,Credit Card

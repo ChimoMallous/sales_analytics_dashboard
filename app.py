@@ -10,6 +10,16 @@ st.set_page_config(page_title="Sales_Analytics_Dashboard", layout="wide")
 st.title("Sales Analytics Dashboard")
 df = pd.DataFrame()
 
+# Required columns
+REQUIRED_COLUMNS = ['Revenue', 'Profit', 'Units_Sold', 'Customer_ID', 'Category', 'Region']
+
+# Add File uploader to load user data
+uploaded_file = st.file_uploader("Upload your sales data CSV file (required columns: Revenue, Profit, Units_Sold, Customer_ID, Category, Region)", type=["csv"])
+if uploaded_file is not None:
+    with st.spinner("Loading data..."):
+        df = pd.read_csv(uploaded_file)
+        st.caption(f"Loaded {len(df)} records")
+
 # Add button to load sample data
 if st.button("Load Sample Data"):
     with st.spinner("Loading sample data..."):
@@ -18,7 +28,11 @@ if st.button("Load Sample Data"):
 
 # Main dashboard, only show if data is loaded
 if not df.empty:
-    
+    # Check for required columns
+    missing_cols = [col for col in REQUIRED_COLUMNS if col not in df.columns]
+    if missing_cols:
+        st.error(f"The following required columns are missing from the data: {', '.join(missing_cols)}")
+
     # Display KPIs in a bordered container
     with st.container(border=True):
         st.subheader("Key Performance Indicators (KPIs)")
@@ -46,6 +60,16 @@ if not df.empty:
             fig = px.bar(category_data, x='Category', y='Revenue', title='Revenue by Category', color='Revenue', color_continuous_scale=px.colors.sequential.Blues_r)
             st.plotly_chart(fig, use_container_width=True)
     
+    # Display revenue over time by month
+    df['Month'] = pd.to_datetime(df['Date']).dt.to_period('M')
+    rev_by_month = df.groupby("Month")['Revenue'].sum().reset_index()
+    rev_by_month['Month'] = rev_by_month['Month'].astype(str)
+    with st.container(border=True):
+        st.subheader("Revenue Over Time")
+        fig = px.line(rev_by_month, x='Month', y='Revenue', title='Revenue by Month', markers=True)
+        fig.update_xaxes(dtick="M1")
+        st.plotly_chart(fig, use_container_width=True)
+
     # Display data head and summary statistics side by side
     with st.container(border=True):
         st.subheader("Sales Data Overview")
