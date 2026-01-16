@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.express as px
-from utils.analytics import calculate_kpis, revenue_by_region, revenue_by_category
+from utils.analytics import calculate_kpis, revenue_by_region, revenue_by_category, revenue_by_month
 from utils.data_processing import load_sample_data
 
 # Set page configuration
@@ -61,12 +61,11 @@ if not df.empty:
             st.plotly_chart(fig, use_container_width=True)
     
     # Display revenue over time by month
-    df['Month'] = pd.to_datetime(df['Date']).dt.to_period('M')
-    rev_by_month = df.groupby("Month")['Revenue'].sum().reset_index()
-    rev_by_month['Month'] = rev_by_month['Month'].astype(str)
+
     with st.container(border=True):
         st.subheader("Revenue Over Time")
-        fig = px.line(rev_by_month, x='Month', y='Revenue', title='Revenue by Month', markers=True)
+        monthly_revenue = revenue_by_month(df)
+        fig = px.line(monthly_revenue, x='Month', y='Revenue', title='Revenue by Month', markers=True)
         fig.update_xaxes(dtick="M1")
         st.plotly_chart(fig, use_container_width=True)
 

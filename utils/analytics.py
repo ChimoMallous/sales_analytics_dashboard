@@ -24,3 +24,10 @@ def revenue_by_region(df):
     region_rev = df.groupby('Region')['Revenue'].sum().reset_index()
     region_rev = region_rev.sort_values('Revenue', ascending=False)
     return region_rev
+
+# Create function to calculate revenue by month
+def revenue_by_month(df):
+    df['Month'] = pd.to_datetime(df['Date']).dt.to_period('M')
+    rev_by_month = df.groupby("Month")['Revenue'].sum().reset_index()
+    rev_by_month['Month'] = rev_by_month['Month'].astype(str)
+    return rev_by_month
